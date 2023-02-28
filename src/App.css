@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(249, 249, 251);
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    text-align: center;
+}
+.container{
+    width: 100%;
+}
+.task{
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 4px 0px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+input[type="checkbox"] {
+    position: relative;
+    top: 5px;
+    height: 30px;
+    width: 20px;
+    margin: 0 5px 0 0;
+}
+.task label{
+    font-size: 25px;
+}
+.task button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.task svg{
+    height: 30px;
+}
+.add_task{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    font-size: 59px;
+    z-index: 3;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0;
+    border: none;
+    color: #f52e2e;
+    box-shadow: rgb(0 0 0 / 15%) 0 0 20px 0px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*Pop up start*/
+.popup_container{
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 200px;
+    top: 30%;
+}
+.popup{
+    z-index: 6;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 15%) 0 0 5px 0;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.popup input{
+    height: 30px;
+    width: 250px;
+    padding: 6px;
+    font-size: 18px;
+}
+.popup button{
+    display: block;
+    height: 30px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00b2ff;
+    color: white;
+}
+/*Pop up end*/
+@media (max-width:400px) {
+     
+}
+/* .App {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  form {
+    display: flex;
+    margin-bottom: 20px;
   }
-}
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.1rem;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+  }
+  
+  li span {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+  
+  li button {
+    padding: 5px 10px;
+    background-color: #FF4136;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  } */
+  
