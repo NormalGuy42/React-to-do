@@ -15,6 +15,7 @@ h1{
 }
 .container{
     width: 100%;
+    padding-bottom: 30px;
 }
 .task{
     width: 80%;
@@ -35,9 +36,16 @@ input[type="checkbox"] {
     height: 30px;
     width: 20px;
     margin: 0 5px 0 0;
+    cursor: pointer;
+}
+button{
+  cursor: pointer;
 }
 .task label{
     font-size: 25px;
+}
+.task label.completed{
+  text-decoration: line-through;
 }
 .task button{
     background-color: white;
@@ -47,9 +55,12 @@ input[type="checkbox"] {
 .task svg{
     height: 30px;
 }
+.task .actions{
+  display: flex;
+}
 .add_task{
     display: flex;
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: center;
     height: 60px;
